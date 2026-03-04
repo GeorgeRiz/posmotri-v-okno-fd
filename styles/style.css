@@ -98,7 +98,6 @@ ol {
 
 .content__list-container {
   height: 298px;
-  /* flex-grow: 1; */
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
@@ -106,11 +105,15 @@ ol {
   gap: 30px;
 }
 
+.result__video-container,
+.content__list-container {
+  position: relative;
+}
+
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* flex-grow: 1; */
 }
 
 .content__video-card {
@@ -333,7 +336,3 @@ ol {
   outline-offset: 1px;
 }
 
-.result__video-container,
-.content__list-container {
-  position: relative;
-}
