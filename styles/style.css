@@ -23,7 +23,7 @@ html {
 
 .content {
   display: flex;
-  padding: 133px 30px;
+  /* padding: 133px 30px; */
   gap: 30px;
   align-items: flex-end;   
   justify-content: space-between;
@@ -97,9 +97,9 @@ ol {
 }
 
 .content__list-container {
+  min-width: 399px;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -120,7 +120,7 @@ ol {
   display: flex;
   align-items: flex-start;
   width: 390px;
-  height: 103px;
+  min-height: 103px;
   gap: 6px;
 }
 
@@ -139,8 +139,9 @@ ol {
 .content__video-card-description {
   line-height: 16.2px;
   display: -webkit-box;
-  line-clamp: 4;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .search-form__fieldset-title {
@@ -298,7 +299,7 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   align-self: flex-end;
 }
 
